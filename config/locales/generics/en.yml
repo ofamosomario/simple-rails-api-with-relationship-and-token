@@ -1,0 +1,12 @@
+en:
+  generics:
+    confirms:
+      new_following: 'You sent the following invite to %{user_followed}, now %{user_followed} need accept or reject the invitation.'
+      accepted_friend: 'You accepted a new follower.' 
+      rejected_friend: 'You rejected a new follower.'
+      welcome: 'Welcome and feel free to use our system %{welcome_user}.' 
+    errors:
+      already_friends: 'You are already following with this person.'
+      not_friends: 'This person isnt your follower.'
+      status_pending: 'You already sent the invitation, but the status still pending, be patient.'
+      no_posts: 'Nothing to see and nothing to read :('
