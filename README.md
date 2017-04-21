@@ -3,6 +3,11 @@
 
 A simple API showing a simple relationship and post system with token authorization. 
 
+### How to install:
+  - First of all, go to project folder and then run: bundle install
+  - After this, use: rake db:create, db:migrate, db:seed
+  - And finally: rails s to start the server.
+
 ### End points:
 
   - POST: auth/sign_up : Sing up a new user.
@@ -28,10 +33,12 @@ You can autheticate with a existing user (login: user1@user.com.br , password: 1
 "uid":          "zzzzz"
 ```
 
-### How to install:
-  - First of all, go to project folder and then run: bundle install
-  - After this, use: rake db:create, db:migrate, db:seed
-  - And finally: rails s to start the server.
+### Tests:
+To run the tests, run this command below:
+```sh
+$ rake spec
+```
+
 
 ### GEMS:
 - gem 'rack-cors'
@@ -41,3 +48,5 @@ You can autheticate with a existing user (login: user1@user.com.br , password: 1
 - gem 'rtask-db-drop-connections', '~> 1.0'
 - gem 'will_paginate'
 - gem 'api-pagination'
+- gem 'rspec-rails', '~> 3.5'
+- gem 'shoulda-matchers'
