@@ -1,7 +1,7 @@
 # Ruby On Rails - API
 ##### Developed by: Mário Augusto (mario@greenmelon.com.br).
 
-A simple API showing a simple relationship and post system with token authorization. 
+A simple API showing a simple relationship and post system with token authorization. For tests, can use this address: https://rails-api-tidy.herokuapp.com/auth/sign_in
 
 ### How to install:
   - First of all, go to project folder and then run: bundle install
@@ -10,8 +10,8 @@ A simple API showing a simple relationship and post system with token authorizat
 
 ### End points:
 
-  - POST: auth/sign_up : Sing up a new user.
-  - POST: /auth : login in. 
+  - POST: auth/sign_in : login in. 
+  - POST: /auth : create a new user.
   - GET: /relationships/list-followers : list all follwers.
   - POST: /relationships : create a new relationships
   - POST: /relationships/accept : accept a relationships request.

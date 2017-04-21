@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 	scope module: :v1 do
 
 		# DEVISE
-  	mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks], controllers: { registrations: "registrations", sessions: "v1/sessions" }
+  	mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks], controllers: { sessions: "v1/sessions" }
 		
 	  # CUSTOM ROUTES
 	  # Relationship
